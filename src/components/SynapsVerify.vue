@@ -6,7 +6,7 @@
       'min-height': '687px',
     }"
     class="root"
-    allow="microphone; camera; midi; encrypted-media;"
+    allow="microphone; camera; midi; encrypted-media; usb; ethereum"
     allowfullscreen="true"
     frameBorder="none"
   />
