@@ -1,10 +1,11 @@
 <template>
   <div id="app">
     <synaps-verify
-      sessionId="f3243476-cec44c4a-5565ccd6-e7e9622d"
+      sessionId="4fd1d553-3e5249ca-508d569c-1c6bef5e"
       :color="{ primary: '212b39', secondary: 'ffffff' }"
       lang="en"
       service="individual"
+      :withFinishButton="true"
       @ready="print('ready')"
       @finish="print('finish')"
     />
