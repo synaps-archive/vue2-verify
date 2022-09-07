@@ -41,10 +41,13 @@ export default {
     tier: {
       type: Number,
     },
+    withFinishButton: {
+      type: Boolean,
+    },
   },
   computed: {
     url() {
-      const { sessionId, service, color, lang, tier } = this;
+      const { sessionId, service, color, lang, tier, withFinishButton } = this;
       const params = {
         service,
         session_id: sessionId,
@@ -52,6 +55,7 @@ export default {
         secondary: color ? color.secondary : undefined,
         lang: lang ? lang : "en",
         tier: tier ? tier : undefined,
+        with_finish_button: withFinishButton,
       };
       return `${serviceUrl[service]}?${Object.keys(params)
         .reduce((acc, key) => {
